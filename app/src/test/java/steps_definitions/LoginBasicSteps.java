@@ -17,10 +17,10 @@ public class LoginBasicSteps {
     private static ConfigProperties confProp;
     private static  Response response ;
     private static User body;
-    //private static Logger log = Logger.getLogger(LoggerApi.class.getName());
+   // private static Logger log = Logger.getLogger(LoggerApi.class.getName());
     
     //@Given("Get the URL of the login")
-    @Given("^Get the URL of the login$")
+    @Given("Get the URL of the login")
     public void user_on_login_page() {
         System.out.println("corriendo login basic steps!!!!!!");
         //log.info("Verify that the user can access to the application with username or password valid. AT-19");
@@ -28,12 +28,13 @@ public class LoginBasicSteps {
         body = User.builder()
                 .username(confProp.username())
                 .password(confProp.password()).build();
-        //.password(confProp.password()).build();
+
         // code to navigate to the login page
     }
     //@When("the user enters the correct <username> and <password>")
     @When("the user enters the correct username and password")
     public void user_enters_credentials() {
+        System.out.println("the user enters the correct username and password!!!");
         ApiManager apiManager = new ApiManager();
         response = apiManager
                 .postBasic(EndPoints.BASIC.api(), body);
@@ -41,7 +42,10 @@ public class LoginBasicSteps {
     }
     @Then("the status code should be OK")
     public void user_on_home_page() {
-        assertEquals(StatusCode.STATUS_CODE_200.statusCode(), 200);
-        // code to verify that the user is taken to the home page
+        System.out.println("the status code should be OK!!!");
+       // assertEquals(StatusCode.STATUS_CODE_200.statusCode(), 200);
+        assertEquals(StatusCode.STATUS_CODE_200.statusCode(), response.getStatusCode());
+        //assertEquals(StatusCode.STATUS_CODE_405.statusCode(), response.getStatusCode());
+    
     }
 }
