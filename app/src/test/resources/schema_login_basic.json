@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "username": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "date_joined": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "username",
+    "first_name",
+    "last_name",
+    "email",
+    "date_joined"
+  ]
+}
