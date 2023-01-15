@@ -20,7 +20,6 @@ public class LoginBasicSteps {
     @Given("Get the URL of the login")
     public void user_on_login_page() {
         System.out.println("corriendo login basic steps!!!!!!");
-        //log.info("Verify that the user can access to the application with username or password valid. AT-19");
         confProp = ConfigFactory.create(ConfigProperties.class);
         body = User.builder()
                 .username(confProp.username())
@@ -37,7 +36,5 @@ public class LoginBasicSteps {
     public void user_on_home_page() {
         System.out.println("the status code should be OK!!!");
         assertEquals(StatusCode.STATUS_CODE_200.statusCode(), response.getStatusCode());
-        //assertEquals(StatusCode.STATUS_CODE_405.statusCode(), response.getStatusCode());
-    
     }
 }

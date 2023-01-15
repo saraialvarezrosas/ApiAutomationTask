@@ -1170,3 +1170,922 @@
 [2023-01-15 15:38:22] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
 [2023-01-15 15:38:22] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
 [2023-01-15 15:38:22] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:41:37] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:41:38] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:41:38] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:41:38] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:41:38] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:41:38] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:41:38] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:41:38] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:41:38] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:41:38] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:41:38] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:41:38] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:41:38] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:41:38] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:41:38] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:41:38] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:41:38] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:41:41 GMT[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=6w7ri96zt9m5jx9jo3nwo7jt8ncehkpy; expires=Sun, 29 Jan 2023 19:41:41 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:41:39] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:41:39] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:41:41 GMT
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << Set-Cookie: sessionid=6w7ri96zt9m5jx9jo3nwo7jt8ncehkpy; expires=Sun, 29 Jan 2023 19:41:41 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:41:39] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:41:39] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:41:39] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:41:39] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:41:39] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:41:39] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:41:41] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:41:41] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:41:41] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:41:41] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:41:41] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:41:41] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:41:41] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:41:41] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:41:41] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:41:41] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:41:41] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:41:41] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:41:41] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:41:41] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:41:41] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:41:43 GMT[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=qtw2tun5cje1jojuv37v6nrb2f9pcapk; expires=Sun, 29 Jan 2023 19:41:43 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:41:42] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:41:42] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:41:43 GMT
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << Set-Cookie: sessionid=qtw2tun5cje1jojuv37v6nrb2f9pcapk; expires=Sun, 29 Jan 2023 19:41:43 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:41:42] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:41:42] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:41:42] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:41:42] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:45:36] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:45:36] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:45:37] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:45:37] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:45:37] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:45:37] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:45:37] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:45:37] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:45:37] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:45:37] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:45:37] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:45:37] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:45:37] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:45:37] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:45:37] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:45:37] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:45:37] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:45:39 GMT[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=4t3ylaaj7xzhj6gih1086nbc3pzpzblo; expires=Sun, 29 Jan 2023 19:45:39 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:45:38] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:45:39 GMT
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << Set-Cookie: sessionid=4t3ylaaj7xzhj6gih1086nbc3pzpzblo; expires=Sun, 29 Jan 2023 19:45:39 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:45:38] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:45:38] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:45:38] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:45:38] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:45:38] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:45:38] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:45:38] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:45:38] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:45:38] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:45:38] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:45:38] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:45:38] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:45:38] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:45:38] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:45:38] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:45:39] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:45:39] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:45:39] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:45:39] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:45:39] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:45:39] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:45:39] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:45:39] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:45:41 GMT[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=sz4tfbj1e8y2j5cx43elkwd3wczmdnbk; expires=Sun, 29 Jan 2023 19:45:41 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:45:40] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:45:40] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:45:41 GMT
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << Set-Cookie: sessionid=sz4tfbj1e8y2j5cx43elkwd3wczmdnbk; expires=Sun, 29 Jan 2023 19:45:41 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:45:40] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:45:40] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:45:40] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:45:40] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:46:14] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:46:14] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:46:14] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:46:14] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:46:14] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:46:14] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:46:14] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:46:14] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:46:14] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:46:14] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:46:14] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:46:14] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:46:14] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:46:14] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:46:14] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:46:14] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:46:14] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:46:17 GMT[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=093b8pf5vencv9tbysmfxathiznmtgpr; expires=Sun, 29 Jan 2023 19:46:17 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:46:15] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:46:15] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:46:17 GMT
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << Set-Cookie: sessionid=093b8pf5vencv9tbysmfxathiznmtgpr; expires=Sun, 29 Jan 2023 19:46:17 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:46:15] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:46:15] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:46:15] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:46:15] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:46:16] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:46:16] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:46:16] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:46:16] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:46:16] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:46:16] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:46:16] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:46:16] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:46:16] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:46:16] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:46:16] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:46:16] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:46:16] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:46:16] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:46:16] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:46:16] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:46:16] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:46:18 GMT[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=n17fe7fgrwosnjcow1uw4ag0jfw6o093; expires=Sun, 29 Jan 2023 19:46:18 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:46:17] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:46:17] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:46:18 GMT
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << Set-Cookie: sessionid=n17fe7fgrwosnjcow1uw4ag0jfw6o093; expires=Sun, 29 Jan 2023 19:46:18 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:46:17] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:46:17] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:46:17] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:46:17] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:46:17] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:46:17] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:46:18] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:46:18] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:46:18] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:46:18] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:46:18] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:46:18] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:46:18] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:46:18] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:46:18] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:46:18] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:46:18] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:46:18] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:46:18] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:46:18] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:46:18] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"1234564"}"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "HTTP/1.1 400 Bad Request[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:46:20 GMT[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "Content-Length: 56[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:46:19] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 400 Bad Request
+[2023-01-15 15:46:19] [ DEBUG] [headers:262] << HTTP/1.1 400 Bad Request
+[2023-01-15 15:46:19] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:46:20 GMT
+[2023-01-15 15:46:19] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:46:19] [ DEBUG] [headers:265] << Content-Length: 56
+[2023-01-15 15:46:19] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:46:19] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:46:19] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:46:19] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:46:19] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:46:19] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:49:49] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:49:49] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:49:50] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:49:50] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:49:50] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:49:50] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:49:50] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:49:50] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:49:50] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:49:50] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:49:50] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:49:50] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:49:50] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:49:50] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:49:50] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:49:50] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:49:50] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:49:52 GMT[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=s8vevx8rpziwmlgxds61y4s2j6bb0cu4; expires=Sun, 29 Jan 2023 19:49:52 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:49:51] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:49:52 GMT
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << Set-Cookie: sessionid=s8vevx8rpziwmlgxds61y4s2j6bb0cu4; expires=Sun, 29 Jan 2023 19:49:52 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:49:51] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:49:51] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:49:51] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:49:51] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:49:51] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:49:51] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:49:51] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:49:51] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:49:51] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:49:51] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:49:51] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:49:51] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:49:51] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:49:51] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:49:51] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:49:51] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:49:51] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:49:51] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:49:51] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:49:51] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:49:51] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:49:54 GMT[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=d8759dur5luqx0cjpkrj6fhxegn9p2e2; expires=Sun, 29 Jan 2023 19:49:54 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:49:53] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:49:54 GMT
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << Set-Cookie: sessionid=d8759dur5luqx0cjpkrj6fhxegn9p2e2; expires=Sun, 29 Jan 2023 19:49:54 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:49:53] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:49:53] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:49:53] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:49:53] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:49:53] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:49:53] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:49:53] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:49:53] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:49:53] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:49:53] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:49:53] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:49:53] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:49:53] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:49:53] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:49:53] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:49:53] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:49:53] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:49:53] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:49:53] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:49:53] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:49:53] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"1234564"}"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "HTTP/1.1 400 Bad Request[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:49:56 GMT[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "Content-Length: 56[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:49:54] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 400 Bad Request
+[2023-01-15 15:49:54] [ DEBUG] [headers:262] << HTTP/1.1 400 Bad Request
+[2023-01-15 15:49:54] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:49:56 GMT
+[2023-01-15 15:49:54] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:49:54] [ DEBUG] [headers:265] << Content-Length: 56
+[2023-01-15 15:49:54] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:49:54] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:49:54] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:49:54] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:49:54] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:49:54] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:50:25] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:50:25] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:50:25] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:50:25] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:50:25] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:50:25] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:50:25] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:50:25] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:50:25] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:50:25] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:50:25] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:50:25] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:50:25] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:50:25] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:50:25] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:50:25] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:50:25] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:50:28 GMT[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=utloa0ufw3gf1sfk90zilt7or9m3kn2h; expires=Sun, 29 Jan 2023 19:50:28 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:50:26] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:50:28 GMT
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << Set-Cookie: sessionid=utloa0ufw3gf1sfk90zilt7or9m3kn2h; expires=Sun, 29 Jan 2023 19:50:28 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:50:26] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:50:26] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:50:26] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:50:26] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:50:26] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:50:26] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:50:26] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:50:26] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:50:26] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:50:26] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:50:26] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:50:26] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:50:26] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:50:26] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:50:26] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:50:26] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:50:26] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:50:26] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:50:26] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:50:26] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:50:26] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:50:29 GMT[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=53wnv0ocpk6qxjwioebjm4ga22b0kd3f; expires=Sun, 29 Jan 2023 19:50:29 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:50:28] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:50:28] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:50:29 GMT
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << Set-Cookie: sessionid=53wnv0ocpk6qxjwioebjm4ga22b0kd3f; expires=Sun, 29 Jan 2023 19:50:29 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:50:28] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:50:28] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:50:28] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:50:28] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:52:03] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:52:03] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:52:04] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:52:04] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:52:04] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:52:04] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:52:04] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:52:04] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:52:04] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:04] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:52:04] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:52:04] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:52:04] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:52:04] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:52:04] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:52:04] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:52:04] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:52:06 GMT[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=dmau0r134k6254udsqvvp2p71fa26agz; expires=Sun, 29 Jan 2023 19:52:06 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:52:05] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:52:06 GMT
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << Set-Cookie: sessionid=dmau0r134k6254udsqvvp2p71fa26agz; expires=Sun, 29 Jan 2023 19:52:06 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:52:05] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:52:05] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:52:05] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:52:05] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:52:05] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:52:05] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:52:05] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:52:05] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:52:05] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:52:05] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:52:05] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:52:05] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:52:05] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:05] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:52:05] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:52:05] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:52:05] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:52:05] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:52:05] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:52:05] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:52:05] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:52:08 GMT[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=1b30bomh0esaiym0f0oqce7orabg1z4z; expires=Sun, 29 Jan 2023 19:52:08 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:52:06] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:52:06] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:52:08 GMT
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << Set-Cookie: sessionid=1b30bomh0esaiym0f0oqce7orabg1z4z; expires=Sun, 29 Jan 2023 19:52:08 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:52:06] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:52:06] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:52:06] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:52:06] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:52:37] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:52:37] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:52:37] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:52:37] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:52:37] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:52:37] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:52:37] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:52:37] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:52:37] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:37] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:52:37] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:52:37] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:52:37] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:52:37] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:52:37] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:52:37] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:52:37] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:52:40 GMT[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=1ln0apehh8f69gdhbzwlospzhu3n9mz9; expires=Sun, 29 Jan 2023 19:52:40 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:52:38] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:52:38] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:52:40 GMT
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << Set-Cookie: sessionid=1ln0apehh8f69gdhbzwlospzhu3n9mz9; expires=Sun, 29 Jan 2023 19:52:40 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:52:38] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:52:38] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:52:38] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:52:38] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:52:38] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:52:38] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:52:39] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:52:39] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:52:39] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:52:39] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:52:39] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:52:39] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:52:39] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:39] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:52:39] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:52:39] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:52:39] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:52:39] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:52:39] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:52:39] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:52:39] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:52:41 GMT[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=xlfgqjcvtiwq6mb57teeg7n5ikxwvim8; expires=Sun, 29 Jan 2023 19:52:41 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:52:40] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:52:41 GMT
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << Set-Cookie: sessionid=xlfgqjcvtiwq6mb57teeg7n5ikxwvim8; expires=Sun, 29 Jan 2023 19:52:41 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:52:40] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:52:40] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:52:40] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:52:40] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:52:40] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:52:40] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:52:40] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:52:40] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:52:40] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:52:40] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:52:40] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:52:40] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:52:40] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:52:40] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:52:40] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:52:40] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:52:40] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:52:40] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:52:40] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:52:40] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:52:40] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"1234556"}"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "HTTP/1.1 400 Bad Request[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:52:42 GMT[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "Content-Length: 56[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:52:41] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 400 Bad Request
+[2023-01-15 15:52:41] [ DEBUG] [headers:262] << HTTP/1.1 400 Bad Request
+[2023-01-15 15:52:41] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:52:42 GMT
+[2023-01-15 15:52:41] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:52:41] [ DEBUG] [headers:265] << Content-Length: 56
+[2023-01-15 15:52:41] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:52:41] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:52:41] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:52:41] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:52:41] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:52:41] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:55:30] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:55:30] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:55:30] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:55:30] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:55:30] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:55:30] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:55:30] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:55:30] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "Content-Length: 47[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:55:30] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:55:30] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:55:30] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:55:30] [ DEBUG] [headers:281] >> Content-Length: 47
+[2023-01-15 15:55:30] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:55:30] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:55:30] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:55:30] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:55:30] [ DEBUG] [wire:87]  >> "{"username":"incrediboys ","password":"123456"}"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:55:33 GMT[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=e890g1t3x3mv6ascdcmh2qeyn5pixpro; expires=Sun, 29 Jan 2023 19:55:33 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:55:31] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:55:31] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:55:33 GMT
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << Set-Cookie: sessionid=e890g1t3x3mv6ascdcmh2qeyn5pixpro; expires=Sun, 29 Jan 2023 19:55:33 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:55:31] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:55:31] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:55:31] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:55:31] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[2023-01-15 15:55:32] [ DEBUG] [BasicClientConnectionManager:161] Get connection for route {s}->https://test-api.k6.io:443
+[2023-01-15 15:55:32] [ DEBUG] [DefaultClientConnectionOperator:177] Connecting to test-api.k6.io:443
+[2023-01-15 15:55:32] [ DEBUG] [RequestAddCookies:123] CookieSpec selected: ignoreCookies
+[2023-01-15 15:55:32] [ DEBUG] [RequestAuthCache:77] Auth cache not set in the context
+[2023-01-15 15:55:32] [ DEBUG] [RequestTargetAuthentication:80] Target auth state: UNCHALLENGED
+[2023-01-15 15:55:32] [ DEBUG] [RequestProxyAuthentication:89] Proxy auth state: UNCHALLENGED
+[2023-01-15 15:55:32] [ DEBUG] [DefaultHttpClient:677] Attempt 1 to execute request
+[2023-01-15 15:55:32] [ DEBUG] [DefaultClientConnection:274] Sending request: POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "POST /auth/basic/login/ HTTP/1.1[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "Accept: */*[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "Content-Length: 46[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "Host: test-api.k6.io[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "Connection: Keep-Alive[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [wire:73]  >> "[\r][\n]"
+[2023-01-15 15:55:32] [ DEBUG] [headers:278] >> POST /auth/basic/login/ HTTP/1.1
+[2023-01-15 15:55:32] [ DEBUG] [headers:281] >> Accept: */*
+[2023-01-15 15:55:32] [ DEBUG] [headers:281] >> Content-Type: application/json
+[2023-01-15 15:55:32] [ DEBUG] [headers:281] >> Content-Length: 46
+[2023-01-15 15:55:32] [ DEBUG] [headers:281] >> Host: test-api.k6.io
+[2023-01-15 15:55:32] [ DEBUG] [headers:281] >> Connection: Keep-Alive
+[2023-01-15 15:55:32] [ DEBUG] [headers:281] >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+[2023-01-15 15:55:32] [ DEBUG] [headers:281] >> Accept-Encoding: gzip,deflate
+[2023-01-15 15:55:32] [ DEBUG] [wire:87]  >> "{"username":"incrediboys","password":"123456"}"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "HTTP/1.1 200 OK[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "Date: Sun, 15 Jan 2023 19:55:34 GMT[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "Content-Type: application/json[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "Content-Length: 162[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "Connection: keep-alive[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "Vary: Accept, Cookie[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "Allow: POST, OPTIONS[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "Set-Cookie: sessionid=beocfuyat4c2hjiv8xql1qakckyoq69a; expires=Sun, 29 Jan 2023 19:55:34 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "X-Frame-Options: SAMEORIGIN[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [wire:73]  << "[\r][\n]"
+[2023-01-15 15:55:33] [ DEBUG] [DefaultClientConnection:259] Receiving response: HTTP/1.1 200 OK
+[2023-01-15 15:55:33] [ DEBUG] [headers:262] << HTTP/1.1 200 OK
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << Date: Sun, 15 Jan 2023 19:55:34 GMT
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << Content-Type: application/json
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << Content-Length: 162
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << Connection: keep-alive
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << Vary: Accept, Cookie
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << Allow: POST, OPTIONS
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << Set-Cookie: sessionid=beocfuyat4c2hjiv8xql1qakckyoq69a; expires=Sun, 29 Jan 2023 19:55:34 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+[2023-01-15 15:55:33] [ DEBUG] [headers:265] << X-Frame-Options: SAMEORIGIN
+[2023-01-15 15:55:33] [ DEBUG] [DefaultHttpClient:504] Connection can be kept alive indefinitely
+[2023-01-15 15:55:33] [ DEBUG] [RestAssuredHttpBuilder:553] Parsing response as: application/json
+[2023-01-15 15:55:33] [ DEBUG] [RestAssuredHttpBuilder:556] Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
